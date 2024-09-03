@@ -20,7 +20,7 @@ def get_dollar_exchange_rate(salary_value):
 
     dolar = data['value'][0]['cotacaoVenda']
     real = round(1 / dolar, 6)
-    converted_value = salary_value * dolar
+    converted_value = format(salary_value * dolar, ",.2f")
     
     return [dolar, real, converted_value, days]
 
