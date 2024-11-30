@@ -4,6 +4,7 @@ import pyperclip
 from dotenv import dotenv_values
 
 today = date.today()
+#today = date.fromisoformat("2024-11-15")
 
 def get_dollar_exchange_rate(salary_value):
     base_url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='"
